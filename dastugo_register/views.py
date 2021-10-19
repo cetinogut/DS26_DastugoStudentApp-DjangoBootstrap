@@ -24,7 +24,7 @@ def student_add_view(request):
     form = StudentForm()
     
     if request.method == "POST":
-        form = StudentForm(request.POST)
+        form = StudentForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, "Student added successful")
@@ -52,7 +52,7 @@ def student_update_view(request, pk):
     form = StudentForm(instance = student)
     
     if request.method == "POST":
-        form = StudentForm(request.POST, instance = student)
+        form = StudentForm(request.POST, request.FILES, instance = student)
         if form.is_valid():
             form.save()
             messages.success(request, "Student updated successfully")
