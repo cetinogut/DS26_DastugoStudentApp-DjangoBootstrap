@@ -71,5 +71,5 @@ $ python manage.py runserver
 - Website [dastugo.com](https://www.dastugo.com)
 - GitHub [@cetinogut](https://www.github.com/cetinogut)
 
-- Linkedin [@cetinogut](https://www.linkedin.com/cetinogut)
+- Linkedin [@cetinogut](https://www.linkedin.com/in/cetinogut/)
 - Twitter [@cogut_tw](https://www.twitter.com/cogut_tw)
