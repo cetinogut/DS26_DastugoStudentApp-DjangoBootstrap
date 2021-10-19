@@ -1,0 +1,39 @@
+{% extends 'dastugo_register/base.html' %}
+{% block content%}
+
+<h2>Student Update </h2>
+{% load crispy_forms_tags %}
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token%} 
+    {% comment %} {{ form.as_p }} {% endcomment %} 
+        <div class="row">
+            <div class="col-6">
+                {{ form | crispy}}
+            </div>
+            <div class="col-6">
+                <!-- {{ form.image|as_crispy_field }} -->
+                <img src="{{ form.instance.image.url }}" height="400"/>
+            </div>
+        </div>
+        
+
+        <div class="row mb-3">
+           
+        </div>
+        <div class="row mb-3">
+            <div class="col-8">
+                <button type="submit" class="btn btn-success col-12">
+                    <i class="fas fa-user-edit"></i>
+                    Update</button>
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-secondary col-12" onClick="javascript:history.go(-1);">
+                    <i class="far fa-window-close"></i>
+                    Cancel</button>
+            </div>
+        </div>
+    <!-- <input type="submit" value="Update Student"> -->
+
+</form>
+
+{% endblock content%}

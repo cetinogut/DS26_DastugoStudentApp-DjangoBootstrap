@@ -1,0 +1,54 @@
+{% extends 'dastugo_register/base.html' %}
+{% block content%}
+
+<div class="row">
+    <hr/>
+    <h2 class="fs-1 text-uppercase">Student Register </h2>
+    <p class="fst-italic">A simple Python project for implementing CRUD operations</p>
+    <hr/>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <!-- <th scope="col">First Name</th>
+                <th scope="col">Last Name</th> -->
+                <th scope="col">Full Name</th>
+                <th scope="col">Path</th>
+                <th scope="col">
+                    <a href="{% url 'add_route' %}">
+                        <button class="btn btn-outline-success"><i class="fas fa-plus text-success"></i> Add New</button>
+                    </a>
+                
+                    <a href="{% url 'home' %}">
+                        <button class="btn btn-outline-success">Back <i class="fas fa-chevron-circle-left text-success"></i></button>
+                    </a>
+                </th>
+              </tr>
+        </thead>
+        {% for student in students %}
+
+        <tbody>
+            <tr>
+                <td><strong>{{ forloop.counter }} </strong></td>
+                <td>{{student.first_name}} {{student.last_name}} <a href="{% url 'detail_route' student.id %}" class="btn btn-primary fw-lighter fs-6 lh-sm">View Detail</a></td>
+                <!-- <td>{{student.last_name}}</td> -->
+                <td>{{student.path}}</td>
+                <td>
+                    <a href="{% url 'update_route' student.id %}" class="btn">
+                     <i class="far fa-edit"></i>
+                    </a>
+                    <a href="{% url 'delete_route' student.id %}" class="btn">
+                        <!-- <button><i class="far fa-trash-alt text-danger"></i></button> -->
+                        <i class="far fa-trash-alt text-danger"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock content%}

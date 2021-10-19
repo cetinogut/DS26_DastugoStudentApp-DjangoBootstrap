@@ -1,0 +1,66 @@
+{% extends 'dastugo_register/base.html' %}
+{% block content%}
+
+<hr/>
+<h2 class="fs-1 text-uppercase">Student Register </h2>
+<p class="fst-italic">A simple Python project for implementing CRUD operations</p>
+<hr/>
+
+<div class="row">
+    {% load crispy_forms_tags %}
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token%}
+        {% comment %} {{ form.as_p }} {% endcomment %} 
+        {% comment %}  {{ form | crispy}} {% endcomment %} 
+       
+        <div class="row mb-3">
+            <div class="col-6">
+              {{ form.first_name|as_crispy_field }}
+            </div>
+            <div class="col-6">
+              {{ form.last_name | as_crispy_field }}
+            </div>
+        </div>
+        <div class="row mb-3">
+            {{ form.mobile|as_crispy_field }}
+        </div>
+        <div class="row mb-3">
+            {{ form.email|as_crispy_field }}
+        </div>
+        <div class="row mb-3">
+            {{ form.gender|as_crispy_field }}
+        </div>
+          
+        <div class="row mb-3">
+            <div class="col-4">
+                {{ form.number | as_crispy_field }}
+            </div>
+            <div class="col-8">
+                {{ form.path | as_crispy_field }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            {{ form.image|as_crispy_field }}
+        </div>
+        <div class="row mb-3">
+            <div class="col-8">
+                <button type="submit" class="btn btn-success col-12">
+                    <i class="fas fa-database"></i>
+                    Submit</button>
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-secondary col-12" onClick="javascript:history.go(-1);">
+                    <i class="fas fa-stream"></i>
+                    Back to List</button>
+            </div>
+        </div>
+        <!-- <input type=button value="Previous Page" onClick="javascript:history.go(-1);"> -->
+            
+    </form>
+
+    
+</div>
+
+
+{% endblock content%}

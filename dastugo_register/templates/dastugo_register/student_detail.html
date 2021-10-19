@@ -1,0 +1,42 @@
+{% extends 'dastugo_register/base.html' %}
+{% block content%}
+
+<h2> Student Detail    </h2>
+
+<div>
+   <img src= "{{student.image.url}}" alt="img" >
+</div>
+
+<div>
+    {{student.first_name}}
+</div>
+
+<div>
+    {{student.last_name}}
+</div>
+
+<div>
+    {{student.email}}
+</div>
+<div>
+    {{student.phone}}
+</div>
+
+<div>
+    {{student.number}}
+</div>
+
+<div>
+    {{student.gender}}
+</div>
+
+<div>
+    <a href="{% url 'update_route' student.id %}">
+        <button>Edit</button>
+    </a>
+
+    <a href="{% url 'delete_route' student.id %}">
+        <button>Delete</button>
+    </a>
+</div>
+{% endblock content%}

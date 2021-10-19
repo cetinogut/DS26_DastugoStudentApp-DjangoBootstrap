@@ -1,0 +1,21 @@
+body {
+    background-color: red;
+}
+
+h1{
+    font-size: 60px;
+    color: darkgreen;
+    
+}
+
+.navbar h1{
+    color: blueviolet;
+    display: block;
+}
+
+.navbar p{
+    font-size: small;
+    font-style: italic;
+    color: red;
+    display: block;
+}
