@@ -68,8 +68,8 @@ $ python manage.py runserver
 
 ## Contact
 
-- Website [dastugo.com](https://{dastugo.com})
-- GitHub [@cetinogut](https://{github.com/cetinogut})
+- Website [dastugo.com](https://dastugo.com)
+- GitHub [@cetinogut](https://github.com/cetinogut)
 
-- Linkedin [@cetinogut](https://{linkedin.com/cetinogut})
-- Twitter [@cogut_tw](https://{twitter.com/cogut_tw})
+- Linkedin [@cetinogut](https://linkedin.com/cetinogut)
+- Twitter [@cogut_tw](https://twitter.com/cogut_tw)
