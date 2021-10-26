@@ -6,11 +6,11 @@
 <div align="center">
   <h3>
     <a href="https://{your-demo-link.your-domain}">
-      Demo
+      Demo (not yet)
     </a>
      | 
     <a href="https://{your-url-to-the-solution}">
-      Project
+      Project (not yet)
     </a>
  
   </h3>
