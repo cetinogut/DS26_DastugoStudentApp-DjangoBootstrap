@@ -1,42 +1,21 @@
 {% extends 'dastugo_register/base.html' %}
 {% block content%}
 
-<h2> Student Detail    </h2>
+<h2><center>Student Detail</center>    </h2>
 
-<div>
-   <img src= "{{student.image.url}}" alt="img" >
-</div>
-
-<div>
-    {{student.first_name}}
-</div>
-
-<div>
-    {{student.last_name}}
-</div>
-
-<div>
-    {{student.email}}
-</div>
-<div>
-    {{student.phone}}
-</div>
-
-<div>
-    {{student.number}}
-</div>
-
-<div>
-    {{student.gender}}
-</div>
-
-<div>
-    <a href="{% url 'update_route' student.id %}">
-        <button>Edit</button>
+<div class="card border-primary mb-3" style="width: 18rem;">
+    <img src="{{student.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{student.first_name}} </h5>
+      <p class="card-text">{{student.email}}</p>
+      <p class="card-text">{{student.phone}}</p>
+      <p class="card-text">{{student.path}}</p>
+      <a href="{% url 'update_route' student.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'delete_route' student.id %}" class="btn btn-danger">Delete</a>
+      <a href="{% url 'list_route' %}">
+        <button class="btn btn-secondary"><i class="fas fa-plus text-success"></i> Back to Students</button>
     </a>
+    </div>
+  </div>
 
-    <a href="{% url 'delete_route' student.id %}">
-        <button>Delete</button>
-    </a>
-</div>
 {% endblock content%}
