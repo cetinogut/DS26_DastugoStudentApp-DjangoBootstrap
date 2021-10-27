@@ -6,11 +6,11 @@
 <div align="center">
   <h3>
     <a href="https://{your-demo-link.your-domain}">
-      Demo (not yet)
+      Live Heroku Demo
     </a>
      | 
     <a href="https://{your-url-to-the-solution}">
-      Project (not yet)
+      Project (same as github)
     </a>
  
   </h3>
@@ -26,6 +26,7 @@
 - [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
+- [Heroku Deployment](#heroku-deployment)
 
 <!-- OVERVIEW -->
 
@@ -64,7 +65,7 @@ $ python manage.py runserver
 ```
 
 ## Acknowledgements
-- Information for your projects
+- Special thanks to our instructors and mentors at Clarusway.. (Mr Barry, Mr Aaron, Mr. Victor and Mr. Rafe)
 
 ## Contact
 
@@ -73,3 +74,6 @@ $ python manage.py runserver
 
 - Linkedin [@cetinogut](https://www.linkedin.com/in/cetinogut/)
 - Twitter [@cogut_tw](https://www.twitter.com/cogut_tw)
+
+## Heroku Deployment 
+- Read the .pdf file attached to the project.
