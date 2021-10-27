@@ -5,7 +5,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://dastugo-student-register.herokuapp.com/">
       Live Heroku Demo
     </a>
      | 
